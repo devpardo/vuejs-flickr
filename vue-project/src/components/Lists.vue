@@ -44,29 +44,28 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-    .lists
-        display: flex
-        width: 100%
-        .message
-          display: flex
-          width: 100%
-          div
-            background: #4cbb78
-            width: 100%
-            display: inline-table
-            padding: 10px
-            margin: 10px
-            border-radius: 5px
-            color: #e3e3e3
-        ul
-          display: flex
-          width: 100%
-          flex-wrap: wrap
-          li
-            width: 33%
-            list-style: none
-            .list-item
-                background: red
-                margin: 10px
+.lists
+  flex: 3
+  width: 100%
+  .message
+    display: flex
+    width: 100%
+    div
+      background: #4cbb78
+      width: 100%
+      display: inline-table
+      padding: 10px
+      margin: 10px
+      border-radius: 5px
+      color: #e3e3e3
+  ul
+    display: flex
+    flex-wrap: wrap
+    li
+      flex-grow: 1
+      list-style: none
+      .list-item
+          background: red
+          margin: 10px
             
 </style>

@@ -61,4 +61,42 @@ export default {
   width: 50%
   float: left
   padding: 20px
+
+
+@media screen and (min-width: 800px) 
+    .app-container 
+      flex-direction: row
+    .lists
+      ul
+        li
+          width: 32%
+
+@media screen and (max-width: 800px) 
+    .app-container 
+      flex-direction: row
+    .lists
+      ul
+        li
+          width: 50%
+    
+@media screen and (max-width: 480px) 
+    .app-container 
+      flex-direction: column
+
+    .lists
+      ul
+        flex-direction: row
+        li
+          width: 100%
+
+    .menu
+      .menu-list
+        li
+          float: left
+          border-radius: 15px
+          padding: 0 10px
+          margin-right: 10px
+          margin-bottom: 5px
+    .col-50
+      width: 100%
 </style>
