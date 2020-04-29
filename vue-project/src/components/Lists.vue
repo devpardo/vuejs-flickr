@@ -47,7 +47,6 @@ export default {
     .lists
         display: flex
         width: 100%
-        background: #e3e3e3
         .message
           display: flex
           width: 100%

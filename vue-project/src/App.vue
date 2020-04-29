@@ -51,11 +51,14 @@ export default {
   font-family: Arial, Helvetica, sans-serif
 
 .app-container 
-  background-color: #e3e3e3
   margin: 0 auto
   margin-top: 50px
   margin-bottom: 50px
   width: 80%
   display: flex
 
+.col-50
+  width: 50%
+  float: left
+  padding: 20px
 </style>

@@ -33,7 +33,8 @@ export default {
   border: 1px solid #e3e3e3
   &:hover
     img
-      zoom: 110%
+      zoom: 150%
+      transition: zoom .5s
   a
     display: block
     height: 100%
@@ -41,6 +42,7 @@ export default {
     cursor: pointer
     overflow: hidden
     img
+      zoom: 120%
       position: absolute
       top: 50%
       left: 50%

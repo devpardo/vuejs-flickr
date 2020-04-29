@@ -1,5 +1,6 @@
 <template>
     <div class="menu">
+      <h1>Categories</h1>
         <ul class="menu-list">
             <li :class="{ 'active':  activeItem == item.value }" v-bind:key="item.id" v-for="item in menuItems">
                 <a v-on:click="selectCat(item.value)">{{item.read}}</a>
@@ -30,6 +31,21 @@ export default {
                     value : "technology",
                     read : "Technology"
                 },
+                {
+                    id : 4,
+                    value : "children",
+                    read : "Children"
+                },
+                {
+                    id : 5,
+                    value : "news",
+                    read : "News"
+                },
+                {
+                    id : 6,
+                    value : "business",
+                    read : "Business"
+                }
             ]
         }
     },
@@ -46,6 +62,9 @@ export default {
     .menu
         height: 100%
         width: 30%
+
+        h1
+          margin: 5px
 
         .menu-list
           margin: 0
